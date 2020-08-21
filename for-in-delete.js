@@ -39,8 +39,11 @@
   Inside the function showValues, write a for in loop that concatenates each of the property values and returns the concatenated string.
 */
 
-function showValues( obj ) {
-  //Code Here
+function showValues() {
+  for(let key in values){
+    console.log(values[key])
+
+  }
 }
 
 
@@ -54,7 +57,13 @@ function showValues( obj ) {
 */
 
 //Code Here
-
+function greaterThan10(obj) {
+  for(obj in greaterThan10){
+    
+    
+    
+  }
+}
 
 
 ////////// PROBLEM 3 //////////
@@ -66,7 +75,9 @@ function showValues( obj ) {
 */
 
 //Code Here
+function double(obj) {
 
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -80,7 +91,15 @@ function showValues( obj ) {
 */
 
 //Code Here
-
+const secrets = obj => {
+  let newStr = ''
+  for(let prop in obj){
+    if(prop.startsWith('sh')){
+      newStr += obj[prop]
+    }
+  }
+  return newStr
+}
 
 
 /* 
@@ -130,7 +149,6 @@ var deleteTheBigNumbers = {
 */
 
 //Code Here
-
 
 
 ////////// PROBLEM 7 //////////
